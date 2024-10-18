@@ -1,25 +1,46 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="courses-container">
-        <h1>Courses</h1>
-        <ul class="courses-list">
-            <li>Mathematics</li>
-            <li>English</li>
-            <li>Kiswahili</li>
-            <li>Biology</li>
-            <li>Chemistry</li>
-            <li>Physics</li>
-            <li>History</li>
-            <li>C.R.E</li>
-        </ul>
-    </div>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Courses Page</title>
+        <meta name="description"
+              content="This is the courses page of our online school, listing all available courses.">
+        <meta name="keywords"
+              content="courses, online school, education, subjects, learning">
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <div class="courses-container">
+            <h1>Courses</h1>
+            <ul class="courses-list">
+                <li>
+                    <a href="#">Mathematics</a>
+                </li>
+                <li>
+                    <a href="#">English</a>
+                </li>
+                <li>
+                    <a href="#">Kiswahili</a>
+                </li>
+                <li>
+                    <a href="#">Biology</a>
+                </li>
+                <li>
+                    <a href="#">Chemistry</a>
+                </li>
+                <li>
+                    <a href="#">Physics</a>
+                </li>
+                <li>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <a href="#">C.R.E</a>
+                </li>
+            </ul>
+        </div>
+        <script src="{% static 'script.js' %}"></script>
+    </body>
 </html>
