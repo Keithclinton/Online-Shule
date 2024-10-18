@@ -1,28 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="home-container">
-        <h1>Welcome to the Home Page</h1>
-        <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-                <a href="#">Dashboard</a>
-                <a href="#">Courses</a>
-                <a href="#">Exams</a>
-                <a href="#">Library</a>
-                <a href="#">Progress</a>
-                <a href="#">News</a>
-                <a href="#">Settings</a>
-                <a href="#">Grades</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <meta name="description"
+              content="Welcome to the home page of our online school. Explore courses, exams, library, and more.">
+        <meta name="keywords"
+              content="home, online school, dashboard, courses, exams, library, progress, news, settings, grades">
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <div class="home-container">
+            <h1>Welcome to the Home Page</h1>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">Dashboard</a>
+                    <a href="#">Courses</a>
+                    <a href="#">Exams</a>
+                    <a href="#">Library</a>
+                    <a href="#">Progress</a>
+                    <a href="#">News</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Grades</a>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+        <script src="{% static 'script.js' %}"></script>
+    </body>
 </html>
