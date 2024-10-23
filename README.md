@@ -53,7 +53,7 @@ To set up the project locally, follow these steps:
   python manage.py runserver
 
 8.Open your Browser and visit
-  http://127.0.0.1Contributing
+  http://127.0.0.1
   
 We welcome contributions! To contribute to the project, please follow these guidelines:
 
